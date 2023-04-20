@@ -9,7 +9,7 @@ body {
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
-  font-family: sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
@@ -21,8 +21,8 @@ h1 {
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
-  margin: 10px;
-  padding: 10px;
+  margin: 15px;
+  padding: 15px;
   border: solid 1px #888;
   background-color: #84B59F;
 }

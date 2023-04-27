@@ -1,3 +1,19 @@
+// Snake
+// An implementation of the game
+// Logan de Vries <lrdevrie@ucsc.edu>
+// April 2023
+
+// Print a grid for the space of the game and character
+// Generate snake
+  // snake starts at a certain size
+  // Generate movement abilities 
+// Generate random items on grid
+  // Snake can pick up items and grow longer
+// If the snake runs into wall or its body, player gets a gameover
+
+
+
+
 // index.js - purpose and description here
 // Author: Your Name
 // Date:
@@ -19,3 +35,4 @@ function main() {
 
 // let's get this party started
 main();
+

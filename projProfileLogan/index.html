@@ -20,53 +20,7 @@
 	<script src="js/lab.js" defer></script>
 	<style>
 
-		.me{
-				width: 200px;
-   		 		height: 200px;
-		  		background-color: transparent;
-		  		border: none;
-		  		cursor: pointer;
-		  		padding: 0;
-		}
-		
-		.image-button {
-				width: 200px;
-   		 		height: 200px;
-		  		background-color: transparent;
-		  		border: none;
-		  		cursor: pointer;
-		  		padding: 0;
-		}
 
-		.minor-section {
-			/* Optional styling for the minor section */
-		}
-
-		#mini .image-button {
-			position: relative;
-		}
-
-		#mini .image-button .description {
-			display: none;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.8);
-			color: #fff;
-			text-align: center;
-			padding: 10px;
-		}
-
-		#mini .image-button:hover .description {
-			display: block;
-		}
-
-		#me img {
-			width: 400px; 
-			height: auto;
-		}
 
 	  </style>
 </head>
@@ -79,7 +33,7 @@
 			<div class="minor-section">
 				<div id="documentary">
 					<h2>My Topic of Interest: Filmmaking</h2>
-					<video src="video.mp4" controls autoplay>
+					<video src="img/2023-05-23_19-35-20.mp4" controls autoplay>
 						Your browser does not support the video tag.
 					</video>
 				</div>
@@ -95,10 +49,21 @@
 			<div class="minor-section">
 				<div id="mini">
 					<h2>mini</h2>
-					<img src="https://pbs.twimg.com/media/FgFP6cPVEAAvyIm.jpg" alt="Button Image" class="image-button"> 
-					<img src="https://pbs.twimg.com/media/FgFP6cPVEAAvyIm.jpg" alt="Button Image" class="image-button"> 
-					<img src="https://pbs.twimg.com/media/FgFP6cPVEAAvyIm.jpg" alt="Button Image" class="image-button"> 
-
+					<div class="image-button">
+						<h3>Title</h3>
+						<img src="https://pbs.twimg.com/media/FgFP6cPVEAAvyIm.jpg" alt="Button Image">
+						<div class="description">This image</div>
+					</div>
+					<div class="image-button">
+						<h3>Title</h3>
+						<img src="https://pbs.twimg.com/media/FgFP6cPVEAAvyIm.jpg" alt="Button Image">
+						<div class="description">This Image</div>
+					</div>
+					<h3>Title</h3>
+					<div class="image-button">
+						<img src="https://pbs.twimg.com/media/FgFP6cPVEAAvyIm.jpg" alt="Button Image">
+						<div class="description">This Image</div>
+					</div>
 				</div>
 			</div>
 			
@@ -107,8 +72,8 @@
 				<div id="links">
 					<h2>Check out these pages! </h2>
 					<p><a href="anotherpage.html">My resume</a></p>
-					<p><a href="anotherpage.html">My chosen resource</a></p>
-					<p><a href="anotherpage.html">My other chosen resource</a></p>
+					<p><a href="anotherpage.html">Resource 1</a></p>
+					<p><a href="anotherpage.html">Resource 2</a></p>
 
 				</div>
 			</div>

@@ -5,9 +5,10 @@
 // Define Variables
 
 $(document).ready(function() {
-  // Add button to the Challenge section
-  var challengeButton = $("<button>").text("Press Me");
-  $("#challenge").append(challengeButton);
+  $('#mini .image-button').click(function() {
+    $(this).find('.description').toggle();
+  });
+});
 
   // Add button to the Problems section
   var problemsButton = $("<button>").text("Press Me");
@@ -22,4 +23,3 @@ $(document).ready(function() {
     var section = $(this).closest(".minor-section");
     section.find("div").toggleClass("special");
   });
-});

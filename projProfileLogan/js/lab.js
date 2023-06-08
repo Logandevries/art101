@@ -5,21 +5,30 @@
 // Define Variables
 
 $(document).ready(function() {
-  $('#mini .image-button').click(function() {
+  // Click event for the movie-news-button
+  $('#movie-news-button').on('click', function() {
+    var apiKey = '7d06d4f6';
+    var movieTitle = 'The Avengers';
+
+    var apiUrl = 'http://www.omdbapi.com/?apikey=' + apiKey + '&t=' + encodeURIComponent(movieTitle);
+
+    $.ajax({
+      url: apiUrl,
+      method: 'GET',
+      success: function(response) {
+        // Handle the response data
+        console.log(response);
+        $('#movie-news').html('<h2>' + response.Title + '</h2><p>' + response.Plot + '</p>');
+      },
+      error: function(error) {
+        console.log('Error:', error);
+      }
+    });
+  });
+
+  // Click event for the image buttons
+  $('#mini .image-button').on('click', function() {
+    $(this).toggleClass('clicked');
     $(this).find('.description').toggle();
   });
 });
-
-  // Add button to the Problems section
-  var problemsButton = $("<button>").text("Press Me");
-  $("#problems").append(problemsButton);
-
-  // Add button to the Results section
-  var resultsButton = $("<button>").text("Press Me");
-  $("#results").append(resultsButton);
-
-  // Click event for the buttons
-  $("button").on("click", function() {
-    var section = $(this).closest(".minor-section");
-    section.find("div").toggleClass("special");
-  });

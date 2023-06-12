@@ -1,6 +1,6 @@
 // index.js - purpose and description here
 // Author: Logan de Vries
-// Created: 31 June
+// Created: 6 June
 
 // Define Variables
 

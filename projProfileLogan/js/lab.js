@@ -5,10 +5,12 @@
 // Define Variables
 
 $(document).ready(function() {
-  // Click event for the movie-news-button
-  $('#movie-news-button').on('click', function() {
+  // ...
+
+  // Click event for the search button
+  $('#search-button').on('click', function() {
     var apiKey = '7d06d4f6';
-    var movieTitle = 'The Avengers';
+    var movieTitle = $('#movie-input').val(); // Get the movie title from the input field
 
     var apiUrl = 'http://www.omdbapi.com/?apikey=' + apiKey + '&t=' + encodeURIComponent(movieTitle);
 
@@ -18,7 +20,7 @@ $(document).ready(function() {
       success: function(response) {
         // Handle the response data
         console.log(response);
-        $('#movie-news').html('<h2>' + response.Title + '</h2><p>' + response.Plot + '</p>');
+        $('#search-movie').html('<h2>' + response.Title + '</h2><p>' + response.Plot + '</p>');
       },
       error: function(error) {
         console.log('Error:', error);
@@ -26,9 +28,10 @@ $(document).ready(function() {
     });
   });
 
+});
+
   // Click event for the image buttons
   $('#mini .image-button').on('click', function() {
     $(this).toggleClass('clicked');
     $(this).find('.description').toggle();
   });
-});
